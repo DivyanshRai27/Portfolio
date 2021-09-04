@@ -1914,6 +1914,12 @@ body.dark footer.footer {
   box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
 }
 
+.shadow-oranged {
+  -webkit-box-shadow: 0px 5px 20px 0px #ff734c;
+  -moz-box-shadow: 0px 5px 20px 0px #ff734c;
+  box-shadow: 0px 5px 20px 0px #ff734c;
+}
+
 .shadow-pink {
   -webkit-box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
   -moz-box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
