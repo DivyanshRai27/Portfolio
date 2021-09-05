@@ -109,7 +109,7 @@
 	<!-- site footer -->
 	<div class="footer">
 		<!-- copyright text -->
-		<span class="copyright">© Copyright 2020</span>
+		<span class="copyright">© Copyright 2021</span>
 	</div>
 
 </header>
@@ -563,36 +563,117 @@
 
 			<div class="spacer" data-height="60"></div>
 
-	
+			<!-- portfolio filter (desktop) -->
+			<ul class="portfolio-filter list-inline wow fadeInUp">
+				<li class="current list-inline-item" data-filter="*">All</li>
+				<li class="list-inline-item" data-filter=".blockchain">Blockchain</li>
+				<li class="list-inline-item" data-filter=".web">Web Dev</li>
+				<li class="list-inline-item" data-filter=".arduino">Arduino</li>
+			</ul>
+			
+			<!-- portfolio filter (mobile) -->
+			<div class="pf-filter-wrapper">
+				<select class="portfolio-filter-mobile">
+					<option value="*">Everything</option>
+					<option value=".blockchain">Blockchain</option>
+					<option value=".web">Web Dev</option>
+					<option value=".arduino">Arduino</option>
+				</select>
+			</div>
 			
 			<!-- portolio wrapper -->
 			<div class="row portfolio-wrapper">
 				
+
 				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
-					<a href="images/projects/health.png" class="work-image">
+				<div class="col-md-4 col-sm-6 grid-item creative blockchain">
+					<a href="#small-dialog" class="work-content">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
-								<span class="term">Django</span>
-								<h4 class="title">Health Application</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
+								<span class="term">Blockchain</span>
+								<h4 class="title">Crypto Storage</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
 							</div>
 							<div class="thumb">
-								<img src="images/projects/health.png" loading="lazy" alt="Health App" />
+								<img src="images/projects/store.png" loading="lazy" alt="Portfolio-title" />
 								<div class="mask"></div>
 							</div>
 						</div>
 					</a>
+					<div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
+						<img src="images/projects/store.png" loading="lazy" alt="Title" />
+						<h2>Crypto Storage </h2>
+						<h4>(Solidity, IPFS, Web3.js, Truffle, React)</h4>
+						<p>A decentralised way to store the files using IPFS.	
+						<br>
+						Share the files easily using IPFS hash.
+						</p>
+					</div>
 				</div>
 
 				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art branding">
-					<a href="#gallery-1" class="gallery-link">
+				<div class="col-md-4 col-sm-6 grid-item creative blockchain web">
+					<a href="#small-dialog2" class="work-content">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
-								<span class="term">Javascript</span>
+								<span class="term">Blockchain & MERN</span>
+								<h4 class="title">Qudio Health</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
+							</div>
+							<div class="thumb">
+								<img src="images/projects/health.png" loading="lazy" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<div id="small-dialog2" class="white-popup zoom-anim-dialog mfp-hide">
+						<img src="images/projects/health.png" loading="lazy" alt="Title" />
+						<h2>Qudio Health </h2>
+						<h4>(Solidity, IPFS, Web3.js, MERN, React Native)</h4>
+						<p>
+							Solved the major problem in healthcare. <br>
+							Designed a functional app in react native and web in MERN stack. <br>
+							Personal data of the patients are recorded on Ethereum Blockchain.
+						</p>
+					</div>
+				</div>
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item creative web">
+					<a href="#small-dialog4" class="work-content">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">MERN stack</span>
+								<h4 class="title">Mezerate</h4>
+								<span class="more-button"><i class="icon-options"></i></span>
+							</div>
+							<div class="thumb">
+								<img src="images/projects/mz.png" loading="lazy" alt="Portfolio-title" />
+								<div class="mask"></div>
+							</div>
+						</div>
+					</a>
+					<div id="small-dialog4" class="white-popup zoom-anim-dialog mfp-hide">
+						<img src="images/projects/mz.png" loading="lazy" alt="Title" />
+						<h2>Mezerate </h2>
+						<h4>(MERN stack, React Native)</h4>
+						<p>
+							Application for the students to find all their study stuff, their doubts etc. <br>
+							Attendence management system & Time table with teacher links.<br>
+							<strong>Used by more than 500 students.</strong>
+						</p>
+					</div>
+				</div>
+
+
+				<!-- portfolio item -->
+				<div class="col-md-4 col-sm-6 grid-item creative web">
+					<a href="#small-dialog3" class="work-content">
+						<div class="portfolio-item rounded shadow-dark">
+							<div class="details">
+								<span class="term">MERN stack</span>
 								<h4 class="title">Globe Trotter</h4>
-								<span class="more-button"><i class="icon-picture"></i></span>
+								<span class="more-button"><i class="icon-options"></i></span>
 							</div>
 							<div class="thumb">
 								<img src="images/projects/gt.png" loading="lazy" alt="Portfolio-title" />
@@ -600,58 +681,80 @@
 							</div>
 						</div>
 					</a>
-					<div id="gallery-1" class="gallery mfp-hide">
-						<a href="images/projects/gt.png"></a>
-						<a href="images/projects/gt2.png"></a>
+					<div id="small-dialog3" class="white-popup zoom-anim-dialog mfp-hide">
+						<img src="images/projects/gt.png" loading="lazy" alt="Title" />
+						<h2>globe Trotter </h2>
+						<h4>(NASA API's, MERN stack)</h4>
+						<p>
+							Solved the Problem Statement Regarding Data Visualization in NASA’s World Wide Technology using their existing APIs <br>
+							Made a web app that fetches the data from the NASA APIs
+
+						</p>
 					</div>
 				</div>
 
 				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item art">
-					<a href="images/projects/todo.png" class="work-image">
-						<div class="portfolio-item rounded shadow-dark">
-							<div class="details">
-								<span class="term">Javascript</span>
-								<h4 class="title">To do list Web App</h4>
-								<span class="more-button"><i class="icon-magnifier-add"></i></span>
-							</div>
-							<div class="thumb">
-								<img src="images/projects/todo.png" loading="lazy" alt="Health App" />
-								<div class="mask"></div>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<!-- portfolio item -->
-				<div class="col-md-4 col-sm-6 grid-item branding">
-					<a href="#" class="work-video">
+				<div class="col-md-4 col-sm-6 grid-item creative arduino">
+					<a href="#small-dialog5" class="work-content">
 						<div class="portfolio-item rounded shadow-dark">
 							<div class="details">
 								<span class="term">Arduino</span>
 								<h4 class="title">Lemonade Maker</h4>
-								<span class="more-button"><i class="icon-camrecorder"></i></span>
+								<span class="more-button"><i class="icon-options"></i></span>
 							</div>
 							<div class="thumb">
-								<img src="images/elc.png" loading="lazy" alt="Portfolio-title" />
+								<img src="images/projects/elc.png" loading="lazy" alt="Portfolio-title" />
 								<div class="mask"></div>
 							</div>
 						</div>
 					</a>
+					<div id="small-dialog5" class="white-popup zoom-anim-dialog mfp-hide">
+						<img src="images/projects/elc.png" loading="lazy" alt="Title" />
+						<h2>Lemonade Maker </h2>
+						<h4>(Arduino)</h4>
+						<p>
+							Made a lemonade maker using Arduino and a robotic arm. <br>
+							<strong>Winner at TIET, Patiala.</strong>
+						</p>
+					</div>
 				</div>
 
+					<!-- portfolio item -->
+					<div class="col-md-4 col-sm-6 grid-item creative blockchain">
+						<a href="#small-dialog6" class="work-content">
+							<div class="portfolio-item rounded shadow-dark">
+								<div class="details">
+									<span class="term">Blockchain</span>
+									<h4 class="title">Decentragram</h4>
+									<span class="more-button"><i class="icon-options"></i></span>
+								</div>
+								<div class="thumb">
+									<img src="images/projects/elc.png" loading="lazy" alt="Portfolio-title" />
+									<div class="mask"></div>
+								</div>
+							</div>
+						</a>
+						<div id="small-dialog6" class="white-popup zoom-anim-dialog mfp-hide">
+							<img src="images/projects/elc.png" loading="lazy" alt="Title" />
+							<h2>Decentragram </h2>
+							<h4>(Solidity, IPFS, Web3.js, Truffle, React)</h4>
+							<p>
+								Can share the images and all secured on IPFS. <br>
+								user can tip the owner of the image with ether.
+							</p>
+						</div>
+					</div>
 
 
-			
-			<!-- more button -->
-			<!-- <div class="load-more text-center mt-4">
-				<a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a> -->
-				<!-- numbered pagination (hidden for infinite scroll) -->
-				<ul class="portfolio-pagination list-inline d-none">
-					<li class="list-inline-item">1</li>
-					<li class="list-inline-item"><a href="works-2.html">2</a></li>
-				</ul>
+				
+
+				
+
+				
+
 			</div>
+			
+			
 
 		</div>
 
@@ -760,7 +863,7 @@
 
 				<div class="col-md-6">
 					<!-- Contact Form -->
-					<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@divyanshrai.com" target="_blank" class="btn btn-default"> <i class="fas fa-envelope"></i> &nbsp; contact@divyanshrai.com</a><br><br>
+					<a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=divyanshrai27@gmail.com" target="_blank" class="btn btn-default"> <i class="fas fa-envelope"></i> &nbsp; divyanshrai27@gmail.com</a><br><br>
 					<a href="tel:+919530990077" target="_blank" class="btn btn-default"> <i class="fas fa-phone"></i> &nbsp; (+91) 9530-990077</a>
 					
 
